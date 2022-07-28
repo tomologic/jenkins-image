@@ -1,7 +1,8 @@
 # https://www.jenkins.io/changelog-stable/
-FROM jenkins/jenkins:2.346.1
+FROM jenkins/jenkins:2.346.2
 RUN jenkins-plugin-cli --plugins \
     build-timeout \
+    command-launcher \
     configuration-as-code \
     email-ext \
     kubernetes \
@@ -11,4 +12,5 @@ RUN jenkins-plugin-cli --plugins \
     google-login \
     google-oauth-plugin \
     postbuildscript \
+    sshd \
     view-job-filters
