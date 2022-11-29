@@ -1,5 +1,5 @@
 # https://www.jenkins.io/changelog-stable/
-FROM jenkins/jenkins:2.346.2
+FROM jenkins/jenkins:2.361.4
 RUN jenkins-plugin-cli --plugins \
     build-timeout \
     command-launcher \
@@ -14,3 +14,18 @@ RUN jenkins-plugin-cli --plugins \
     postbuildscript \
     sshd \
     view-job-filters
+
+# basic-branch-build-strategies
+# envinject
+# extended-choice-parameter (vuln)
+# git-client
+# git-server
+# javadoc
+# ldap ?
+# matrix-auth
+# jdk-tool ?
+# pam-auth ?
+# rebuild
+# slack
+# testng-plugin
+# timestamper
