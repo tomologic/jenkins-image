@@ -1,5 +1,5 @@
 # https://www.jenkins.io/changelog-stable/
-FROM jenkins/jenkins:2.361.4
+FROM jenkins/jenkins:2.375.2
 RUN jenkins-plugin-cli --plugins \
     build-timeout \
     command-launcher \
