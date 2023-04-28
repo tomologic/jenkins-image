@@ -1,5 +1,5 @@
 # https://www.jenkins.io/changelog-stable/
-FROM jenkins/jenkins:2.375.2
+FROM jenkins/jenkins:2.387.2
 RUN jenkins-plugin-cli --plugins \
     build-timeout \
     command-launcher \
@@ -11,6 +11,7 @@ RUN jenkins-plugin-cli --plugins \
     git \
     google-login \
     google-oauth-plugin \
+    google-compute-engine \
     postbuildscript \
     sshd \
     view-job-filters
