@@ -1,5 +1,5 @@
 # https://www.jenkins.io/changelog-stable/
-FROM jenkins/jenkins:2.401.3
+FROM jenkins/jenkins:2.414.1
 RUN jenkins-plugin-cli --plugins \
     build-timeout \
     command-launcher \
@@ -14,7 +14,8 @@ RUN jenkins-plugin-cli --plugins \
     google-compute-engine \
     postbuildscript \
     sshd \
-    view-job-filters
+    view-job-filters \
+    workflow-aggregator
 
 # basic-branch-build-strategies
 # envinject
